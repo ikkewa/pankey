@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title Pan Simulator
+    meta(charset="utf-8")
+    meta(name="language", content="en")
+    meta(name="viewport", content="width=device-width")
+    meta(name="description", content="Stupid stuff experimenting with Howl and Webaudio")
+    meta(name="author", content="IkkeWa")
+    meta(name="robots", content="index")
+    meta(name="date", content="2015-07-31T22:00:00+02:00")
+
+    meta(name="twitter:card" content="summary")
+    meta(name="twitter:site" content="@ikkewa_")
+    meta(name="twitter:title" content="Pan Keyboard")
+    meta(name="twitter:description" content="Langeweile...")
+
+    // build:css css/style.css
+    link(href='css/style.css', rel='stylesheet')
+    // endbuild
+
+    // build:remove
+    script(src='/js/devreload.js')
+    // endbuild
+
+  body
+    .container
+      .row
+        h1 Pan Keyboard
+        p Press a key to play a sound
+      .row
+        ul.piano
+          li.key.key-white(data-key="65")
+          li.key.key-black(data-key="87")
+          li.key.key-white(data-key="83")
+          li.key.key-black(data-key="69")
+          li.key.key-white(data-key="68")
+          li.key.key-black(data-key="82")
+          li.key.key-white(data-key="70")
+          li.key.key-black(data-key="84")
+          li.key.key-white(data-key="71")
+          li.key.key-black(data-key="90")
+          li.key.key-white(data-key="72")
+          li.key.key-black(data-key="85")
+          li.key.key-white(data-key="74")
+          li.key.key-black(data-key="73")
+          li.key.key-white(data-key="75")
+          li.key.key-black(data-key="79")
+          li.key.key-white(data-key="76")
+
+    // build:js js/build.min.js
+    script(src='js/build.js')
+    // endbuild
+
