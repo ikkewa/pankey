@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Pan Simulator
+    title Pan Keyboard
     meta(charset="utf-8")
     meta(name="language", content="en")
     meta(name="viewport", content="width=device-width")
@@ -13,7 +13,7 @@ html
     meta(name="twitter:card" content="summary")
     meta(name="twitter:site" content="@ikkewa_")
     meta(name="twitter:title" content="Pan Keyboard")
-    meta(name="twitter:description" content="Langeweile...")
+    meta(name="twitter:description" content="Soundboard with pan voices...")
 
     // build:css css/style.css
     link(href='css/style.css', rel='stylesheet')
@@ -48,7 +48,18 @@ html
           li.key.key-black(data-key="79")
           li.key.key-white(data-key="76")
 
+
+      .row
+        h5 When you ask why?
+        p Working on a different project and wanted to test WebAudio sprites.
+          br
+          | If you want to add another sound, just 
+          a(href="https://twitter.com/intent/tweet?screen_name=ikkewa_",class="twitter-mention-button", data-size="large", data-related="ikkewa_") tweet me on Twitter
+
     // build:js js/build.min.js
     script(src='js/build.js')
     // endbuild
+
+    script.
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
